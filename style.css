@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ABeeZee", sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(213, 96%, 18%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+header h3 {
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 1rem;
+				font-size: 2rem;
+}
+
+header h3 span {
+				color: hsl(228, 100%, 84%);
+				padding-right: 0.5rem;
+}
+
+.output {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+}
+
+.output > section > p  {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #fff;
+				font-size: 1.5rem;
+}
+
+.output > section > div {
+				width: 5rem;
+				height: 5rem;
+				border: 0.2rem solid hsl(228, 100%, 84%);
+				border-radius: 50%;
+				margin: 1rem 2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;;
+				font-size: 2rem;
+}
+
+.select {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 4em;
+}
+
+.select > section > p  {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #fff;
+				font-size: 1.2rem;
+}
+
+.select > section > div {
+				width: 3rem;
+				height: 3rem;
+				border: 0.2rem solid hsl(228, 100%, 84%);
+				border-radius: 50%;
+				margin: 1rem 2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;;
+				flex-direction: row;
+				font-size: 1.2rem;
+}
+
+article {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 3rem;
+				flex-direction: column;
+}
+
+.displayResult {
+				display: none;
+				/* display: flex; */
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				background: #fff;
+				padding: 1rem;
+				color: hsl(228, 100%, 84%);
+				border: 0.4rem solid hsl(228, 100%, 84%);
+				width: 20rem;
+}
+
+.displayResult .result {
+				font-size: 1.5rem;
+				padding: 1rem;
+				font-weight: 700;
+}
+
+.displayResult button {
+				background: hsl(228, 100%, 84%);
+				color: #fff;
+				outline: none;
+				border: none;
+				padding: .5rem 1.5rem;
+				text-align: center;
+				font-size: 1.4rem;
+				margin: 0.5rem;
+				font-weight: 700;
+}
+
+
+.scores {
+			 	display: none;
+				/* display: flex; */
+				justify-content: center;
+				align-items: center;
+				flex-direction: column; 
+				background: #fff;
+				padding: 1rem;
+				color: hsl(228, 100%, 84%);
+				border: 0.4rem solid hsl(228, 100%, 84%);
+				width: 20rem;
+				margin-top: 3rem;
+}
+
+.scores > div {
+				padding: .5rem;
+				font-size: 1.3rem;
+				font-weight: 700;
+}
+
+footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > li {
+    list-style: none;
+    margin: 1.2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li > a {
+    color: #fff;
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+footer > li a:hover {
+    font-size: 2.3rem;
+ }
+
+@media screen and (min-width:768px) {
+				header h3 {
+								font-size: 4rem;
+								padding: 2rem;
+				}
+				
+				header h3 span {
+								margin-right: 1rem;
+				}
+				
+				.output > section > div {
+								width: 9rem;
+								height: 9rem;
+								font-size: 3rem;
+								margin: 2rem 4rem;
+				}
+				
+				.output > section > p  {
+								font-size: 2.5rem;
+				}
+				
+				.select > section > div {
+								width: 6rem;
+								height: 6rem;
+								font-size: 2.5rem;
+								margin: 6rem 3rem 2rem 3rem;
+				}
+				
+				.select > section > p {
+								font-size: 2.7rem;
+				}
+				
+				footer > li {
+				margin: 2.7rem;
+				}
+				
+				footer li > a {
+    font-size: 3rem;
+				}
+
+				footer > li a:hover {
+    font-size: 4rem;
+ 				}
+}
